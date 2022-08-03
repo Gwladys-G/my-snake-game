@@ -7,8 +7,29 @@
     <title>Snake Game</title>
   </head>
   <body>
+    <h1>My Snake Game</h1>
+    <div id = "settings">
+      <div id="speedrange">
+        <div>
+          <label for="speed">Snake Speed 🌪 </label>
+        </div>
+        <div>
+          <input type="range" id="speed" name="speed" min="1" max="70">
+        </div>
+      </div>
+      <div class="growingrange">
+        <div>
+          <label for="growing">Growing Size 🍎 </label>
+        </div>
+        <div>
+          <input type="number" id="growing" name="growing" value="1"
+            min="1" max="10">
+        </div>
+      </div>
+    </div>
+    <hr>
     <div id="game-board"></div>
-
+    <p>Your score is : <span>0</span></p>
   </body>
 
 </html>
