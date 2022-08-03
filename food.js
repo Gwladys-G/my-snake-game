@@ -4,11 +4,13 @@ import { expansionRate as expansionRate} from './settings.js'
 
 let food = getRandomFoodPosition()
 // const EXPANSION_RATE =
+export let numberOfApples = 0
 
 
 export function update(){
   if(onSnake(food)){
     expandSnake(expansionRate);
+    updateApples();
     food = getRandomFoodPosition()
   }
 };
@@ -30,4 +32,12 @@ export function getRandomFoodPosition(){
       newFoodPosition = randomGridPosition()
     }
   return newFoodPosition
+}
+
+function updateApples(){
+  numberOfApples +=1 ;
+  let score = document.getElementById('score');
+  let scoreMessage =''
+  numberOfApples > 1 ? scoreMessage =`${numberOfApples} apples` : scoreMessage = "1 apple"
+  score.innerText = `You have eaten ${scoreMessage} `;
 }

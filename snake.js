@@ -1,6 +1,7 @@
 import { getInputDirection } from "./input.js";
+// import { speedOfSnake } from "./settings.js"
 
-export const SNAKE_SPEED = 5;
+// export let speedSnake = speedOfSnake;
 
 const snakeBody = [
   {x: 11, y: 11},

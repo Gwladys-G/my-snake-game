@@ -1,6 +1,7 @@
-import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection  } from './snake.js'
+import { update as updateSnake, draw as drawSnake, getSnakeHead, snakeIntersection  } from './snake.js'
 import { update as updateFood, draw as drawfood } from './food.js'
 import { outsideGrid } from './grid.js'
+import { speedOfSnake as speed } from './settings.js'
 
 
 let lastRenderTime = 0;
@@ -19,10 +20,10 @@ function main(currentTime){
 
   window.requestAnimationFrame(main);
   let secondSinceLastRender = (currentTime - lastRenderTime) / 1000;
-  if (secondSinceLastRender < 1/SNAKE_SPEED) {
+  if (secondSinceLastRender < (1/speed)) {
     return
   }
-  // console.log('Render');
+
   lastRenderTime = currentTime;
   update()
   draw()
