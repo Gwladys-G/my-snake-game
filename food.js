@@ -37,7 +37,7 @@ export function getRandomFoodPosition(){
 function updateApples(){
   numberOfApples +=1 ;
   let score = document.getElementById('score');
-  let scoreMessage =''
-  numberOfApples > 1 ? scoreMessage =`${numberOfApples} apples` : scoreMessage = "1 apple"
-  score.innerText = `You have eaten ${scoreMessage} `;
+  // let scoreMessage =''
+  // numberOfApples > 1 ? scoreMessage =`${numberOfApples} apples` : scoreMessage = "1 apple"
+  score.innerText = `You have eaten ${numberOfApples} 🍎`;
 }
