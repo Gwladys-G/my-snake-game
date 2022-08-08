@@ -60,3 +60,25 @@ p {
   background-color: #7E4E60;
   border: .25vmin solid #6d394c;
 }
+
+#instructions{
+  border: 2px solid red;
+  width: 60vmin;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,50%);
+  background-color: #e3d8d0;
+  border: 2.5px solid  #7c7780;
+  box-shadow: 3px 3px 5px #91847c;
+  padding: 10px;
+}
+
+#instructions:hover {
+  font-size: 5vh;
+}
+
+.hide {
+  display: none;
+}

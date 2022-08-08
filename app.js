@@ -45,6 +45,5 @@ export function draw(){
 
 
 function checkDeath(){
-  // gameOver = outsideGrid(getSnakeHead())
   gameOver = snakeIntersection() || outsideGrid(getSnakeHead())
 }
