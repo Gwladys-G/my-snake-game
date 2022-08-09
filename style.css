@@ -87,3 +87,32 @@ h1{
 .hide {
   display: none;
 }
+
+.lost{
+  border: 2px solid red;
+  position: absolute;
+  top: 35%;
+  right: 50%;
+  transform: translate(50%,50%);
+  width: 60vw;
+  height: 22vh;
+}
+ .lost .lostText{
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  margin: auto;
+  margin-top: 2px;
+ }
+
+ .lost button{
+  position: absolute;
+  top: 35%;
+  right: 50%;
+  transform: translate(50%,50%);
+  /* text-align: center;
+
+  margin: auto; */
+ }
