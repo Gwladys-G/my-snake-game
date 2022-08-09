@@ -7,30 +7,33 @@ body {
   overflow: hidden;
   color: #28536B;
   font-size: 3vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1{
   text-align: center;
+  margin-bottom: px;
+  padding: 0;
 }
 
-p {
-  text-align: center;
-}
 
 #score{
-  margin-bottom: 20px;
-  margin-top: 12px;
+  text-align: center;
+  margin-bottom:10px;
+  margin-top: 20px;
+  font-size: 2,5vh;
 }
 
 #settings{
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding: 15px;
-  margin-right: 60px;
-  margin-left: 60px;
+  width: 100vh;
+  margin: auto;
+  padding: 15px 30px;
   background-color: #f7e2d1;
   box-shadow: 1px 1px 3px #91847c;
+  font-size: 2.3vh;
 
 }
 
@@ -54,11 +57,13 @@ p {
 .snake {
   background-color: #0D5D56;
   border: .25vmin solid #2c706b;
+  border-radius: 100px / 50px;
 }
 
 .food {
   background-color: #7E4E60;
   border: .25vmin solid #6d394c;
+  border-radius: 50%;
 }
 
 #instructions{

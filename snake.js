@@ -9,15 +9,12 @@ let newSegments = 0
 
 export function update(){
   addSegments();
-
   const inputDirections = getInputDirection();
   for ( let i = snakeBody.length -2; i >= 0; i--) {
     snakeBody[i + 1] = { ...snakeBody[i] }
   }
-
   snakeBody[0].x += inputDirections.x
   snakeBody[0].y += inputDirections.y
-
 };
 
 export function draw(gameBoard){

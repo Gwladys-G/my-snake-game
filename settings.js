@@ -1,9 +1,9 @@
-// Update GROWING of Snake
-
+export let speedOfSnake = 5;
+export let expansionRate = 1;
+const speedRate = document.getElementById('speed');
 const growingRate = document.getElementById('growing');
 
-export let expansionRate = 1;
-
+// Update GROWING of Snake
 function updateExpansionRate(newGrowth){
   return expansionRate = newGrowth
 };
@@ -15,11 +15,6 @@ growingRate.addEventListener('change', (event) =>{
 
 
 // Update SPEED of Snake
-
-const speedRate = document.getElementById('speed');
-
-export let speedOfSnake = 5;
-
 function updateSpeedRate(newSpeed){
   return speedOfSnake = newSpeed;
 };
