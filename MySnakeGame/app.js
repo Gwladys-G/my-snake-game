@@ -65,5 +65,5 @@ function createText(){
 function reset(){
   lostRestart.classList.add("hide")
   document.getElementById('score').classList.remove("hide")
-  window.location = '/'
+  window.location = '/MySnakeGame'
 }
