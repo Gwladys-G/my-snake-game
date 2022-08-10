@@ -67,7 +67,6 @@ h1{
 }
 
 #instructions{
-  border: 2px solid red;
   width: 60vmin;
   text-align: center;
   position: absolute;
@@ -91,28 +90,34 @@ h1{
 .lost{
   border: 2px solid red;
   position: absolute;
-  top: 35%;
+  top: 9%;
   right: 50%;
   transform: translate(50%,50%);
-  width: 60vw;
-  height: 22vh;
+  width: 52vw;
+  height: 29vh;
+  background-color: #e3d8d0;
+  border: 2.5px solid #7c7780;
+  box-shadow: 3px 3px 5px #91847c;
+  padding: 10px;
 }
+
  .lost .lostText{
   position: absolute;
+  top: 4vw;
   left: 0;
   right: 0;
   text-align: center;
-
   margin: auto;
   margin-top: 2px;
  }
 
  .lost button{
   position: absolute;
-  top: 35%;
+  top: 37%;
   right: 50%;
   transform: translate(50%,50%);
-  /* text-align: center;
+  padding: 15px;
+  font-size: 3vh;
+  color: #28536B;
 
-  margin: auto; */
  }
